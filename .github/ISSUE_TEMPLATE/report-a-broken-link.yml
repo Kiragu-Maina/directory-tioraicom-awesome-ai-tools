@@ -1,0 +1,66 @@
+name: Report a broken link
+description: Tell us about a link that no longer works or now points somewhere else
+title: "[Broken link] "
+labels:
+  - broken-link
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks — this is genuinely useful. Dead and redirected links are the main way a
+        curated list rots.
+
+        **If the link is now dangerous** (malware, phishing, a hijacked domain), do not post
+        it here. Follow the [security policy](../blob/main/SECURITY.md) instead.
+
+  - type: input
+    id: tool-name
+    attributes:
+      label: Tool name
+      description: As it appears in the README.
+      placeholder: Descript
+    validations:
+      required: true
+
+  - type: input
+    id: current-url
+    attributes:
+      label: URL currently in the list
+      placeholder: https://www.descript.com/
+    validations:
+      required: true
+
+  - type: dropdown
+    id: problem
+    attributes:
+      label: What is wrong
+      options:
+        - Page does not load at all
+        - Returns a 404 or an error page
+        - Domain has expired or is parked
+        - Redirects to a different product or company
+        - Product has shut down
+        - Product was renamed or acquired
+        - Wrong URL for the right product
+        - Something else
+    validations:
+      required: true
+
+  - type: input
+    id: correct-url
+    attributes:
+      label: Correct URL, if you know it
+      description: Leave blank if the product is simply gone.
+      placeholder: https://example.com/
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes
+      description: >-
+        Anything that helps us confirm it — the date you checked, an announcement post, the
+        redirect you landed on.
+    validations:
+      required: false

@@ -1,0 +1,6 @@
+# Normalise to LF in the repository, matching .editorconfig.
+* text=auto eol=lf
+
+# The QA script is local maintenance tooling, not the product. Keep it out of
+# GitHub's language bar, so a Markdown list does not present as a PowerShell project.
+scripts/*.ps1 linguist-detectable=false

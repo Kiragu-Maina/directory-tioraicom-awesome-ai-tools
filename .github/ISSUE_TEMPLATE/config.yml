@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: TiorAI AI tools directory
+    url: https://tiorai.com/tools/
+    about: Looking for a tool that is not on this list? The full TiorAI directory is much larger.
+  - name: Contact TiorAI
+    url: https://tiorai.com/contact-us/
+    about: For anything that is not a tool suggestion or a broken link.

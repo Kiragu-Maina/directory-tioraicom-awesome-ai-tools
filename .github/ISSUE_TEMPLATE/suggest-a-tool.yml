@@ -1,0 +1,153 @@
+name: Suggest a tool
+description: Propose an AI tool for the list
+title: "[Tool] "
+labels:
+  - suggestion
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion. Please check the README first — the tool may already be
+        listed under a different name, since products get renamed and acquired often.
+
+        Read [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md) for what qualifies.
+
+  - type: input
+    id: tool-name
+    attributes:
+      label: Tool name
+      description: Exactly as the product's own site writes it.
+      placeholder: Descript
+    validations:
+      required: true
+
+  - type: input
+    id: official-website
+    attributes:
+      label: Official website
+      description: >-
+        The product's own site. Not a review, a directory listing, a referral link, or a
+        URL shortener. No tracking parameters.
+      placeholder: https://www.descript.com/
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Suggested category
+      description: Pick the single best fit. One category per tool.
+      options:
+        - AI assistants
+        - AI coding
+        - AI writing
+        - AI research
+        - AI productivity
+        - AI image generation
+        - AI video
+        - AI audio and voice
+        - AI design
+        - AI marketing and SEO
+        - AI sales and support
+        - AI automation and agents
+        - AI data and analytics
+        - AI presentations
+        - None of these fit
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: One-sentence description
+      description: >-
+        8 to 25 words. Say what it does and who would use it. Write it yourself — do not
+        paste the vendor's tagline. No superlatives.
+      placeholder: Edits video by editing the transcript; delete a sentence and the footage goes with it.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: pricing
+    attributes:
+      label: Pricing
+      description: Up to two labels. Check the vendor's pricing page before answering.
+      multiple: true
+      options:
+        - Free
+        - Freemium
+        - Paid
+        - Open Source
+        - Free Trial
+    validations:
+      required: true
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Only pick what you are sure about. Leave blank if you are guessing.
+      multiple: true
+      options:
+        - Web
+        - Windows
+        - macOS
+        - Linux
+        - iOS
+        - Android
+        - API
+        - CLI
+        - Browser Extension
+        - VS Code
+        - JetBrains
+        - Discord
+    validations:
+      required: false
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why it belongs on the list
+      description: >-
+        What does it do that the tools already in that category do not? Concrete beats
+        enthusiastic.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: relationship
+    attributes:
+      label: Your relationship to this tool
+      description: >-
+        Disclosure is required. It will not count against the submission — undisclosed
+        promotion found later will.
+      options:
+        - No relationship
+        - I am a user
+        - I work with or for the company as an employee or contractor
+        - I represent the company as an agency, reseller, or marketer
+        - I am the founder or on the team
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I have provided the tool's official website.
+          required: true
+        - label: I have opened the link and confirmed the tool is currently accessible.
+          required: true
+        - label: This is not an affiliate, referral, or tracking link.
+          required: true
+        - label: I searched the README for this tool's name and domain and it is not already listed.
+          required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: Optional.
+    validations:
+      required: false

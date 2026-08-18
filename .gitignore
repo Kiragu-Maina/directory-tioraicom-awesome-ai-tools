@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~
+
+# Owner handoff document. Prepared locally in the repository folder, never committed
+# and never published. See CLAUDE.md section 7.
+docs/pre-publish-checklist.md

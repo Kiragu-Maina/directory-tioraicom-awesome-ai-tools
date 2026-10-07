@@ -144,6 +144,7 @@ Generating, editing, and cleaning up still images.
 - **[Ideogram](https://ideogram.ai/)** — Image generator that handles legible text in posters, logos, and mockups. `Freemium` `Web` `iOS` `Android`
 - **[Leonardo.Ai](https://leonardo.ai/)** — Fine-tuned model presets and consistent-character tooling, popular for game and concept art. `Freemium` `Web`
 - **[Midjourney](https://www.midjourney.com/)** — Image model known for its aesthetic defaults, used through the web app or Discord. `Paid` `Web` `Discord` · [alternatives](https://tiorai.com/alternatives/midjourney-alternatives/)
+- **[MyPhotoAI](https://myphotoai.io/)**: Turn your selfies into AI headshots and portraits. `Paid` `Web`
 - **[Photoroom](https://www.photoroom.com/)** — Product photography: cut out the subject, drop in a background, batch the rest. `Freemium` `Web` `iOS` `Android` `API`
 - **[Recraft](https://www.recraft.ai/)** — Generates vector art, icons, and mockups in a consistent style, editable afterwards. `Freemium` `Web`
 - **[Stability AI](https://stability.ai/)** — Publisher of the Stable Diffusion image models and related open-weight releases. `Freemium` `Open Source` `Web` `API` · [vs Midjourney](https://tiorai.com/compare/stable-diffusion-vs-midjourney/)
